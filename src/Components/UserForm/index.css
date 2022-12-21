@@ -1,0 +1,92 @@
+.App {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--ASH-400);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 60%;
+    max-width: 800px;
+    min-width: 300px;
+    height: min-content;
+    padding: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    animation: fade-in 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.title {
+    font-size: 2rem;
+    padding: .4rem 0rem;
+    border-bottom: .1rem solid var(--ASH-400);
+    color: var(--CHARCOAL-700);
+    display: flex;
+    align-items: center;
+}
+.title > span{
+    margin-left: .3rem;
+}
+
+.formControl {
+    padding-top: .4rem;
+
+}
+.formControl * {
+    margin: .1rem 0rem;
+}
+
+.formControlLabel {
+    font-size: 1.2rem;
+    color: var(--CHARCOAL-700);
+}
+.formControlInput {
+    box-sizing: border-box;
+    color: var(--CHARCOAL-700);
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 0.4rem;
+    border: none;
+    padding: .8rem;
+    border: solid .1rem;
+    border-color: var(--ASH-400);
+}
+.formControlInput:focus{
+    /* border: none; */
+    outline: none;
+    border-color:  var(--CHARCOAL-700);
+}
+.formControlSubmit{
+    display: flex;
+    justify-content: right;
+    padding-top: .4rem;
+}
+.formControlSubmitButton{
+    background-color: var(--CHARCOAL-700);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    padding: .8rem;
+    cursor: pointer;
+}
+.formControlSubmitButton:hover{
+    background-color: var(--CHARCOAL-400);
+}
+.error{
+    border-color: red;
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.errorMsg{
+    color: red;
+    font-size: .7rem;
+    line-height: .7rem;
+    height: .7rem;
+}

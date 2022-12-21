@@ -1,0 +1,19 @@
+.userContainer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 0.4rem;
+    padding: .8rem 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    align-items: center;
+}
+.userContainer:hover{
+    background-color: var(--ASH-400);
+}
+.nameContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
