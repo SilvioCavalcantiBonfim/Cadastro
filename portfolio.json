@@ -1,5 +1,5 @@
 {
-    "project": "Asteroids",
+    "project": "Cadastro",
     "frameworks": ["createreactapp"],
-    "description": "Sistema em javascript baseado no jogo asteroids."
+    "description": "Sistema simples de cadastro de usuários."
 }
